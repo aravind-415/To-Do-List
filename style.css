@@ -11,9 +11,8 @@
     padding: 10px;
 }
 .todo-app{
-    width: 100%;
-    border: 5px solid black;
-    max-width: 540px;
+    min-height: 700px;
+    max-width: 840px;
     background-color: white;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
@@ -22,11 +21,13 @@
 .todo-app h2{
     margin-bottom: 20px;
     color: darkblue;
+    font-size: 50px;
     align-items: center;
+    justify-content: center;
     display: flex;
 }
 .todo-app h2 img{
-    width: 30px;
+    width: 80px;
     margin-left: 20px;
 }
 .row{
@@ -45,6 +46,7 @@ input{
     background: transparent;
     padding: 10px;
     font-weight: 600;
+    font-size: 25px;
 }
 button{
     border: none;
@@ -52,13 +54,14 @@ button{
     padding: 10px 50px;
     background:#ff3300;
     color: white;
-    font-size: 16px;
+    font-size: 25px;
+    font-weight: 600;
     cursor: pointer;
     border-radius: 30px;
 }
 ul li{
     list-style: none;
-    font-size: 17px;
+    font-size: 25px;
     padding: 12px 8px 12px 50px;
     user-select: none;
     position: relative;
@@ -70,10 +73,10 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(./unchecked.png);
+    background-image: url(unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 7px;
+    top: 12px;
     left: 8px;
 }
 ul li.checked{
@@ -82,7 +85,7 @@ ul li.checked{
     font-style: italic;
 }
 ul li.checked::before{
-    background-image: url(./checked.png);
+    background-image: url(checked.png);
 }
 ul li span{
     position: absolute;
@@ -90,7 +93,7 @@ ul li span{
     top: 5px;
     width: 40px;
     height: 40px;
-    font-size: 25px;
+    font-size: 30px;
     border-radius: 20px;
     color: #55555580;
     line-height: 40px;
